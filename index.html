@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishab FM - Listen to your Favourite songs.</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brandname"><image src="./logo5.png" href="logo">Rishab FM</image></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songlist">
+            <h1>Handpicked list of evergreen songs.</h1>
+            <div class="SongItemContainer">
+                <div class="songItem">
+                    <img src="./covers/1.jpg" alt="1"/>
+                    <span class="songName">Wo Kisna Hai</span>
+                    <span class="songListPlay"><img src="./playing.gif"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/2.jpg" alt="1"/>
+                    <span class="songName">Kajra Muhobbat wala</span>
+                    <span class="songListPlay"><img src="./playing.gif"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/3.jpg" alt="1"/>
+                    <span class="songName">Ude Jab-Jab Zulfein</span>
+                    <span class="songListPlay"><img src="./playing.gif"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/4.jpg" alt="1"/>
+                    <span class="songName">Ye Parda Hata Do</span>
+                    <span class="songListPlay"><img src="./playing.gif"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/5.jpg" alt="1"/>
+                    <span class="songName">Aajkal Tere Mere</span>
+                    <span class="songListPlay"><img src="./playing.gif"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/6.jpg" alt="1"/>
+                    <span class="songName">Ek Pardesi Mera Dil Le Gaya</span>
+                    <span class="songListPlay"><img src="./playing.gif"></span>
+                </div>
+                <div class="songItem">
+                    <img src="./covers/7.jpg" alt="1"/>
+                    <span class="songName">Taal Se Taal Mila</span>
+                    <span class="songListPlay"><img src="./playing.gif"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="banner"></div>
+    </div>
+
+    <div class="bottom">
+        <div>
+            <span id="Nowtime">0:00</span>
+            <span><input type="range" id="SongProgressBar" min="0" max="100"></span>
+            <span id="TotalTime">0:00</span>
+        </div>
+        <div class="songInfo">
+            <img src="./playing.gif" alt="playing gif" width="45px" /> 
+            <span class="DisplayName">Rishab FM</span>
+        </div>
+        <!-- input type = range gives a progress bar. In the above code, min is the starting number of bar, and max is the last number of the bar. -->
+        <div class="icons">
+            <!-- Fontawsome icons. -->
+            <i class="fa-solid fa-2x fa-backward-step"></i>
+            <i class="fa-solid fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-forward-step"></i>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c598d16798.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
